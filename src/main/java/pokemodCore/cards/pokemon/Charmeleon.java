@@ -40,7 +40,9 @@ public class Charmeleon extends PokeCard {
 
     @Override
     public AbstractCard makeCopy() {
-        return new Charmeleon(new ArrayList<>(this.moves));
+        ArrayList<PokeMove> cardCopies = new ArrayList<>();
+        this.moves.forEach(item -> cardCopies.add((PokeMove) item.makeStatEquivalentCopy()));
+        return new Charmeleon(cardCopies);
     }
 
     @Override

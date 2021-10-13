@@ -43,7 +43,9 @@ public class Charmander extends PokeCard {
 
     @Override
     public AbstractCard makeCopy() {
-        return new Charmander(new ArrayList<>(this.moves));
+        ArrayList<PokeMove> cardCopies = new ArrayList<>();
+        this.moves.forEach(item -> cardCopies.add((PokeMove) item.makeStatEquivalentCopy()));
+        return new Charmander(cardCopies);
     }
 
     @Override

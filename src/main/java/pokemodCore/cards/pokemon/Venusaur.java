@@ -4,6 +4,7 @@ import basemod.abstracts.AbstractCardModifier;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
+import com.megacrit.cardcrawl.relics.WingBoots;
 import pokemodCore.cards.move.*;
 import pokemodCore.patches.AbstractCardEnum;
 
@@ -40,7 +41,9 @@ public class Venusaur extends PokeCard {
 
     @Override
     public AbstractCard makeCopy() {
-        return new Venusaur(new ArrayList<>(new ArrayList<>(this.moves)));
+        ArrayList<PokeMove> cardCopies = new ArrayList<>();
+        this.moves.forEach(item -> cardCopies.add((PokeMove) item.makeStatEquivalentCopy()));
+        return new Venusaur(cardCopies);
     }
 
     @Override

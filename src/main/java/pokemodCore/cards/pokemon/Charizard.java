@@ -40,7 +40,9 @@ public class Charizard extends PokeCard {
 
     @Override
     public AbstractCard makeCopy() {
-        return new Charizard(new ArrayList<>(this.moves));
+        ArrayList<PokeMove> cardCopies = new ArrayList<>();
+        this.moves.forEach(item -> cardCopies.add((PokeMove) item.makeStatEquivalentCopy()));
+        return new Charizard(cardCopies);
     }
 
     @Override

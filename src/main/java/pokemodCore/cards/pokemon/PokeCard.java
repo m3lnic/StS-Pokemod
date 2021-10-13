@@ -69,6 +69,7 @@ public abstract class PokeCard extends CustomCard implements ModalChoice.Callbac
                 BaseMod.logger.info("PokeCard adding upgrade to: " + item.name);
                 item.upgrade();
             });
+            AbstractDungeon.player.masterDeck.refreshHandLayout();
         }
     }
 

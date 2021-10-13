@@ -3,7 +3,7 @@
   "name": "Pokemod",
   "author_list": ["M3lnic"],
   "description": "A pokemon mod for StS",
-  "version": "0.0.3.2a",
+  "version": "0.0.4.0a",
   "sts_version": "12-22-2020",
   "mts_version": "3.23.2",
   "dependencies": ["basemod"],

@@ -39,8 +39,10 @@ public class Wartortle extends PokeCard {
     }
 
     @Override
-    public AbstractCard makeCopy() {
-        return new Wartortle(this.moves);
+    public AbstractCard makeCopy () {
+        ArrayList<PokeMove> cardCopies = new ArrayList<>();
+        this.moves.forEach(item -> cardCopies.add((PokeMove) item.makeStatEquivalentCopy()));
+        return new Blastoise(cardCopies);
     }
 
     @Override
