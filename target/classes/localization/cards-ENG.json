@@ -1,0 +1,95 @@
+{
+  "pokemod:throw_rock": {
+    "NAME": "Throw Rock",
+    "DESCRIPTION": "Deal !D! Damage"
+  },
+  "pokemod:tail_whip": {
+    "NAME": "Tail Whip",
+    "DESCRIPTION": "Apply !M! Vulnerable"
+  },
+  "pokemod:bulbasaur": {
+    "NAME": "Bulbasaur",
+    "DESCRIPTION": "Go Bulbasaur!"
+  },
+  "pokemod:charmander": {
+    "NAME": "Charmander",
+    "DESCRIPTION": "Go Charmander!"
+  },
+  "pokemod:dark_energy": {
+    "NAME": "Dark Energy",
+    "DESCRIPTION": "Gain !M! dark energy"
+  },
+  "pokemod:electric_energy": {
+    "NAME": "Electric Energy",
+    "DESCRIPTION": "Gain !M! electric energy"
+  },
+  "pokemod:fairy_energy": {
+    "NAME": "Fairy Energy",
+    "DESCRIPTION": "Gain !M! fairy energy"
+  },
+  "pokemod:fighting_energy": {
+    "NAME": "Fighting Energy",
+    "DESCRIPTION": "Gain !M! fighting energy"
+  },
+  "pokemod:fire_energy": {
+    "NAME": "Fire Energy",
+    "DESCRIPTION": "Gain !M! fire energy"
+  },
+  "pokemod:grass_energy": {
+    "NAME": "Grass Energy",
+    "DESCRIPTION": "Gain !M! grass energy"
+  },
+  "pokemod:growl": {
+    "NAME": "Growl",
+    "DESCRIPTION": "Apply !M! Weak"
+  },
+  "pokemod:ivysaur": {
+    "NAME": "Ivysaur",
+    "DESCRIPTION": "Go Ivysaur!"
+  },
+  "pokemod:leech_seed": {
+    "NAME": "Leech Seed",
+    "DESCRIPTION": "Siphon !M! temp HP"
+  },
+  "pokemod:leer": {
+    "NAME": "Leer",
+    "DESCRIPTION": "Apply !M! Vulnerable"
+  },
+  "pokemod:peck": {
+    "NAME": "Peck",
+    "DESCRIPTION": "Deal !D!x!M! Damage"
+  },
+  "pokemod:psychic_energy": {
+    "NAME": "Psychic Energy",
+    "DESCRIPTION": "Gain !M! psychic energy"
+  },
+  "pokemod:rare_candy": {
+    "NAME": "Rare Candy",
+    "DESCRIPTION": "Evolve a pokemon"
+  },
+  "pokemod:scratch": {
+    "NAME": "Scratch",
+    "DESCRIPTION": "Deals !D! Damage"
+  },
+  "pokemod:squirtle": {
+    "NAME": "Squirtle",
+    "DESCRIPTION": "Go Squirtle!"
+  },
+  "pokemod:steel_energy": {
+    "NAME": "Steel Energy",
+    "DESCRIPTION": "Gain !M! steel energy"
+  },
+  "pokemod:tackle": {
+    "NAME": "Tackle",
+    "DESCRIPTION": "Deals !D! Damage"
+  },
+  "pokemod:water_energy": {
+    "NAME": "Water Energy",
+    "DESCRIPTION": "Gain !M! water energy"
+  },
+  "pokemod:wartortle": { "NAME": "Wartortle", "DESCRIPTION": "Go Wartortle!" },
+  "pokemod:blastoise": { "NAME": "Blastoise", "DESCRIPTION": "Go Blastoise!" },
+  "pokemod:charmeleon": { "NAME": "Charmeleon", "DESCRIPTION": "Go Charmeleon!" },
+  "pokemod:venusaur": { "NAME": "Venusaur", "DESCRIPTION": "Go Venusaur!" },
+  "pokemod:charizard": { "NAME": "Charizard", "DESCRIPTION": "Go Charizard!" }
+}

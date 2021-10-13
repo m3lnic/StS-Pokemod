@@ -1,0 +1,9 @@
+{
+  "pokemod:starterball": {
+    "NAME": "Starter ball",
+    "FLAVOR": "A basic Starter Ball that gives you a beginner pokemon",
+    "DESCRIPTIONS": [
+      "A basic Starter Ball that gives you a beginner pokemon"
+    ]
+  }
+}

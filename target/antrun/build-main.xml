@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <copy file="target/pokemod.jar" tofile="M:\Games\SteamLibrary\steamapps/common/SlayTheSpire/mods/pokemod.jar"/>
+  <copy file="target/pokemod.jar" tofile="M:\Games\SteamLibrary\steamapps/common/SlayTheSpire/pokemod/content/pokemod.jar"/>
+</target>
+</project>

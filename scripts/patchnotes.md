@@ -1,0 +1,35 @@
+Patch notes (12/10/2021):
+```
+- New Pokemon
+  - Squirtle
+  - Wartortle
+  - Blastoise
+  - Charmander
+  - Charmeleon
+  - Charizard
+  - Bulbasaur
+  - Ivysaur
+  - Venusaur
+- New skills
+  - Rare Candy
+- New moves
+  - Growl
+  - Leech Seed
+  - Leer
+  - Peck
+  - Scratch
+  - Tackle
+  - Tail Whip
+  - Throw Rock
+- New Relic
+  - (Starter) Starter Ball
+- New Energy cards (currently useles)
+  - Dark
+  - Electric
+  - Fairy
+  - Fighting
+  - Fire
+  - Grass
+  - Psychic
+  - Steel
+  - Water
