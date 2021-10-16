@@ -6,6 +6,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import pokemodCore.cards.move.*;
 import pokemodCore.patches.AbstractCardEnum;
+import pokemodCore.patches.PokemodCardTags;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -35,6 +36,7 @@ public class Charmeleon extends PokeCard {
                 CardRarity.SPECIAL
         );
         this.moves = new ArrayList<PokeMove>(moves);
+        this.tags.add(PokemodCardTags.TYPE_FIRE);
         this.generateDescriptionAndModal();
     }
 

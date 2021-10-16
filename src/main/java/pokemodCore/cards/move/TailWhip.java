@@ -12,6 +12,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.VulnerablePower;
 import com.megacrit.cardcrawl.powers.WeakPower;
 import pokemodCore.patches.AbstractCardEnum;
+import pokemodCore.patches.PokemodCardTags;
 
 public class TailWhip extends PokeMove {
     public static final String ID = "pokemod:tail_whip";
@@ -42,6 +43,7 @@ public class TailWhip extends PokeMove {
         );
         this.magicNumber = this.baseMagicNumber = VULNERABLE_AMOUNT;
         this.timesUpgraded = upgrades;
+        this.tags.add(PokemodCardTags.TYPE_NORMAL);
     }
 
     @Override

@@ -12,6 +12,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.WeakPower;
 import pokemodCore.patches.AbstractCardEnum;
+import pokemodCore.patches.PokemodCardTags;
 
 public class Peck extends PokeMove {
     public static final String ID = "pokemod:peck";
@@ -44,6 +45,7 @@ public class Peck extends PokeMove {
         this.magicNumber = this.baseMagicNumber = REPEAT_AMOUNT;
         this.damage = this.baseDamage = DAMAGE_AMOUNT;
         this.timesUpgraded = upgrades;
+        this.tags.add(PokemodCardTags.TYPE_FLYING);
     }
 
     @Override

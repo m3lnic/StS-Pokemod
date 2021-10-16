@@ -12,6 +12,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.WeakPower;
 import pokemodCore.patches.AbstractCardEnum;
+import pokemodCore.patches.PokemodCardTags;
 
 public class Growl extends PokeMove {
     public static final String ID = "pokemod:growl";
@@ -41,6 +42,7 @@ public class Growl extends PokeMove {
         );
         this.magicNumber = this.baseMagicNumber = WEAK_AMOUNT;
         this.timesUpgraded = upgrades;
+        this.tags.add(PokemodCardTags.TYPE_NORMAL);
     }
 
     @Override

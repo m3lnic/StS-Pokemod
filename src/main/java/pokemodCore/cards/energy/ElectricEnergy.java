@@ -4,6 +4,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import pokemodCore.enums.ENERGY_TYPE_ENUM;
 import pokemodCore.patches.AbstractCardEnum;
+import pokemodCore.patches.PokemodCardTags;
 
 public class ElectricEnergy extends EnergyBase {
     public static final String ID = "pokemod:electric_energy";
@@ -31,6 +32,7 @@ public class ElectricEnergy extends EnergyBase {
                 RESOURCE_ON_USE
         );
         this.magicNumber = this.baseMagicNumber = RESOURCE_ON_USE;
+        this.tags.add(PokemodCardTags.TYPE_ELECTRIC);
     }
 
     @Override

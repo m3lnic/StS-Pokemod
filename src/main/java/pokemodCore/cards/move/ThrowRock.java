@@ -9,6 +9,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import pokemodCore.patches.AbstractCardEnum;
+import pokemodCore.patches.PokemodCardTags;
 
 public class ThrowRock extends CustomCard {
     public static final String ID = "pokemod:throw_rock";
@@ -33,6 +34,8 @@ public class ThrowRock extends CustomCard {
                 CardTarget.ENEMY
         );
         this.damage = this.baseDamage = ATTACK_DMG;
+        this.tags.add(CardTags.STRIKE);
+        this.tags.add(CardTags.STARTER_STRIKE);
     }
 
     @Override

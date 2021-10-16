@@ -12,6 +12,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.WeakPower;
 import pokemodCore.patches.AbstractCardEnum;
+import pokemodCore.patches.PokemodCardTags;
 
 public class LeechSeed extends PokeMove {
     public static final String ID = "pokemod:leech_seed";
@@ -42,6 +43,7 @@ public class LeechSeed extends PokeMove {
         );
         this.magicNumber = this.baseMagicNumber = SIPHON_AMOUNT;
         this.timesUpgraded = upgrades;
+        this.tags.add(PokemodCardTags.TYPE_GRASS);
     }
 
     @Override

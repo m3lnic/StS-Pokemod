@@ -7,6 +7,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.relics.WingBoots;
 import pokemodCore.cards.move.*;
 import pokemodCore.patches.AbstractCardEnum;
+import pokemodCore.patches.PokemodCardTags;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -36,6 +37,8 @@ public class Venusaur extends PokeCard {
                 CardRarity.SPECIAL
         );
         this.moves = new ArrayList<PokeMove>(moves);
+        this.tags.add(PokemodCardTags.TYPE_GRASS);
+        this.tags.add(PokemodCardTags.TYPE_POISON);
         this.generateDescriptionAndModal();
     }
 

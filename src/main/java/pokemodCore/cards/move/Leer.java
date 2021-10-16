@@ -11,6 +11,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.VulnerablePower;
 import com.megacrit.cardcrawl.vfx.combat.PowerDebuffEffect;
 import pokemodCore.patches.AbstractCardEnum;
+import pokemodCore.patches.PokemodCardTags;
 
 public class Leer extends PokeMove {
     public static final String ID = "pokemod:leer";
@@ -40,6 +41,7 @@ public class Leer extends PokeMove {
                 CardTarget.ENEMY
         );
         this.magicNumber = this.baseMagicNumber = VULNERABLE_AMOUNT;
+        this.tags.add(PokemodCardTags.TYPE_NORMAL);
         this.timesUpgraded = upgrades;
     }
 

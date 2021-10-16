@@ -8,6 +8,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import pokemodCore.patches.AbstractCardEnum;
+import pokemodCore.patches.PokemodCardTags;
 
 public class Tackle extends PokeMove {
     public static final String ID = "pokemod:tackle";
@@ -38,6 +39,7 @@ public class Tackle extends PokeMove {
         );
         this.damage = this.baseDamage = ATTACK_DMG;
         this.timesUpgraded = upgrades;
+        this.tags.add(PokemodCardTags.TYPE_NORMAL);
     }
 
     @Override

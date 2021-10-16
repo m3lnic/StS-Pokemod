@@ -32,7 +32,6 @@ public class RareCandy extends CustomCard implements ModalChoice.Callback {
     public static final String IMG_PATH = "image/cards/rare_candy/rare_candy.png";
     private static final int COST = 0;
     private ArrayList<PokeCard> pokemons;
-    private ModalChoice modal;
 
     public RareCandy () {
         super (

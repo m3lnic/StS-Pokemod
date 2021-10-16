@@ -16,6 +16,7 @@ import com.megacrit.cardcrawl.rooms.RestRoom;
 import com.megacrit.cardcrawl.screens.select.GridCardSelectScreen;
 import com.megacrit.cardcrawl.shop.ShopScreen;
 import pokemodCore.cards.move.PokeMove;
+import pokemodCore.patches.PokemodCardTags;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,9 +24,27 @@ import java.util.List;
 @AbstractCardModifier.SaveIgnore
 public abstract class PokeCard extends CustomCard implements ModalChoice.Callback {
     public ArrayList<PokeMove> moves = new ArrayList<>();
+    private CardTags primaryType;
+    private CardTags secondaryType;
     private ModalChoice modal;
 
-    public PokeCard(String id, String name, String imgUrl, int cost, String rawDescription, CardType type, CardColor color, CardRarity rarity) {
+    public CardTags getPrimaryType() {
+        return primaryType;
+    }
+
+    public void setPrimaryType(CardTags primaryType) {
+        this.primaryType = primaryType;
+    }
+
+    public CardTags getSecondaryType() {
+        return secondaryType;
+    }
+
+    public void setSecondaryType(CardTags secondaryType) {
+        this.secondaryType = secondaryType;
+    }
+
+    public PokeCard(String id, String name, String imgUrl, int cost, String rawDescription, CardType type, CardColor color, CardRarity rarity, CardTags primaryType, CardTags secondaryType) {
         super(
                 id,
                 name,
@@ -37,6 +56,11 @@ public abstract class PokeCard extends CustomCard implements ModalChoice.Callbac
                 rarity,
                 CardTarget.NONE
         );
+        this.primaryType = primaryType;
+        this.secondaryType = secondaryType;
+        this.tags.add(PokemodCardTags.POKEMON);
+        this.tags.add(primaryType);
+        this.tags.add(secondaryType);
     }
 
     @Override
@@ -90,5 +114,13 @@ public abstract class PokeCard extends CustomCard implements ModalChoice.Callbac
         this.modal = choiceBuilder.create();
         this.modal.generateTooltips();
         this.initializeDescription();
+    }
+
+    public void addNewMove(PokeMove moveToLearn, int cardIndexToSwap) {
+        this.moves.set(cardIndexToSwap, moveToLearn);
+    }
+
+    public boolean canLearnSkill(PokeMove card) {
+        return card.getPrimaryType() == this.primaryType || card.getPrimaryType() == this.secondaryType;
     }
 }

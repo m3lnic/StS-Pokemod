@@ -5,6 +5,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import pokemodCore.PokemodCore;
 import pokemodCore.enums.ENERGY_TYPE_ENUM;
+import pokemodCore.patches.PokemodCardTags;
 
 public abstract class EnergyBase extends CustomCard {
     private ENERGY_TYPE_ENUM energy_type;
@@ -14,6 +15,8 @@ public abstract class EnergyBase extends CustomCard {
         super(id, name, img, cost, rawDescription, type, color, rarity, target);
         this.energy_type = energy_typeENUM;
         this.resource_on_use = energy_modify_amount;
+        this.tags.add(PokemodCardTags.ENERGY);
+        this.tags.add(PokemodCardTags.PRODUCES_ENERGY);
     }
 
     @Override
