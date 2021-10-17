@@ -33,10 +33,11 @@ public class Charmeleon extends PokeCard {
                 DESCRIPTION,
                 CardType.SKILL,
                 AbstractCardEnum.POKEMOD_COLOR,
-                CardRarity.SPECIAL
+                CardRarity.SPECIAL,
+                PokemodCardTags.TYPE_FIRE,
+                null
         );
         this.moves = new ArrayList<PokeMove>(moves);
-        this.tags.add(PokemodCardTags.TYPE_FIRE);
         this.generateDescriptionAndModal();
     }
 

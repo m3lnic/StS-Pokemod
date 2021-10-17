@@ -116,11 +116,17 @@ public abstract class PokeCard extends CustomCard implements ModalChoice.Callbac
         this.initializeDescription();
     }
 
+    public void addNewMove(PokeMove moveToLearn) {
+        this.moves.add(moveToLearn);
+        this.generateDescriptionAndModal();
+    }
+
     public void addNewMove(PokeMove moveToLearn, int cardIndexToSwap) {
         this.moves.set(cardIndexToSwap, moveToLearn);
+        this.generateDescriptionAndModal();
     }
 
     public boolean canLearnSkill(PokeMove card) {
-        return card.getPrimaryType() == this.primaryType || card.getPrimaryType() == this.secondaryType;
+        return card.getPrimaryType() == this.primaryType || card.getPrimaryType() == this.secondaryType || card.getPrimaryType() == PokemodCardTags.TYPE_NORMAL;
     }
 }

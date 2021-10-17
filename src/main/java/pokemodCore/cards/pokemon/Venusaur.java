@@ -34,11 +34,11 @@ public class Venusaur extends PokeCard {
                 DESCRIPTION,
                 CardType.SKILL,
                 AbstractCardEnum.POKEMOD_COLOR,
-                CardRarity.SPECIAL
+                CardRarity.SPECIAL,
+                PokemodCardTags.TYPE_GRASS,
+                PokemodCardTags.TYPE_POISON
         );
         this.moves = new ArrayList<PokeMove>(moves);
-        this.tags.add(PokemodCardTags.TYPE_GRASS);
-        this.tags.add(PokemodCardTags.TYPE_POISON);
         this.generateDescriptionAndModal();
     }
 

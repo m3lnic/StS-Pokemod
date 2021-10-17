@@ -38,11 +38,11 @@ public class Growl extends PokeMove {
                 CardType.ATTACK,
                 AbstractCardEnum.POKEMOD_COLOR,
                 CardRarity.BASIC,
-                CardTarget.ENEMY
+                CardTarget.ENEMY,
+                PokemodCardTags.TYPE_NORMAL
         );
         this.magicNumber = this.baseMagicNumber = WEAK_AMOUNT;
         this.timesUpgraded = upgrades;
-        this.tags.add(PokemodCardTags.TYPE_NORMAL);
     }
 
     @Override

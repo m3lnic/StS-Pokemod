@@ -5,6 +5,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import pokemodCore.Utils;
+import pokemodCore.actions.SelectPokemonForTM;
 import pokemodCore.cards.move.PokeMove;
 import pokemodCore.cards.pokemon.PokeCard;
 import pokemodCore.patches.PokemodCardTags;
@@ -30,6 +31,17 @@ public abstract class PokeTM extends AbstractCard {
         ArrayList<AbstractCard> masterDeckPokemon = Utils.getCardsByTag(AbstractDungeon.player.masterDeck.group, PokemodCardTags.POKEMON);
         if (masterDeckPokemon.size() > 0) {
             ArrayList<AbstractCard> pokemonThatCanLearnMove = Utils.getPokemonThatCanLearnMove(masterDeckPokemon, this.move);
+            if (pokemonThatCanLearnMove.size() > 0) {
+                AbstractDungeon.actionManager.addToBottom(new SelectPokemonForTM(this, pokemonThatCanLearnMove));
+            }
         }
+    }
+
+    public String getMoveName () {
+        return this.move.name;
+    }
+
+    public PokeMove getMoveCard() {
+        return (PokeMove) this.move.makeCopy();
     }
 }

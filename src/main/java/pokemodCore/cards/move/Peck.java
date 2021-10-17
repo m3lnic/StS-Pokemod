@@ -40,12 +40,12 @@ public class Peck extends PokeMove {
                 CardType.ATTACK,
                 AbstractCardEnum.POKEMOD_COLOR,
                 CardRarity.BASIC,
-                CardTarget.ENEMY
+                CardTarget.ENEMY,
+                PokemodCardTags.TYPE_FLYING
         );
         this.magicNumber = this.baseMagicNumber = REPEAT_AMOUNT;
         this.damage = this.baseDamage = DAMAGE_AMOUNT;
         this.timesUpgraded = upgrades;
-        this.tags.add(PokemodCardTags.TYPE_FLYING);
     }
 
     @Override

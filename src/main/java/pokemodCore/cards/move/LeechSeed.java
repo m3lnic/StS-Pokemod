@@ -39,11 +39,11 @@ public class LeechSeed extends PokeMove {
                 CardType.ATTACK,
                 AbstractCardEnum.POKEMOD_COLOR,
                 CardRarity.RARE,
-                CardTarget.ENEMY
+                CardTarget.ENEMY,
+                PokemodCardTags.TYPE_GRASS
         );
         this.magicNumber = this.baseMagicNumber = SIPHON_AMOUNT;
         this.timesUpgraded = upgrades;
-        this.tags.add(PokemodCardTags.TYPE_GRASS);
     }
 
     @Override

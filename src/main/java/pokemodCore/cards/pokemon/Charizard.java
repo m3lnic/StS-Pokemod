@@ -33,11 +33,11 @@ public class Charizard extends PokeCard {
                 DESCRIPTION,
                 CardType.SKILL,
                 AbstractCardEnum.POKEMOD_COLOR,
-                CardRarity.SPECIAL
+                CardRarity.SPECIAL,
+                PokemodCardTags.TYPE_FIRE,
+                PokemodCardTags.TYPE_FLYING
         );
         this.moves = new ArrayList<PokeMove>(moves);
-        this.tags.add(PokemodCardTags.TYPE_FIRE);
-        this.tags.add(PokemodCardTags.TYPE_FLYING);
         this.generateDescriptionAndModal();
     }
 

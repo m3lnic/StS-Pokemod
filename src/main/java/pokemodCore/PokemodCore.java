@@ -117,6 +117,15 @@ public class PokemodCore implements EditCardsSubscriber, EditStringsSubscriber, 
 
         // > Skills
         BaseMod.addCard(new pokemodCore.cards.skill.RareCandy());
+
+        // > TMs
+        BaseMod.addCard(new pokemodCore.cards.tm.GrowlTM());
+        BaseMod.addCard(new pokemodCore.cards.tm.LeechSeedTM());
+        BaseMod.addCard(new pokemodCore.cards.tm.LeerTM());
+        BaseMod.addCard(new pokemodCore.cards.tm.PeckTM());
+        BaseMod.addCard(new pokemodCore.cards.tm.ScratchTM());
+        BaseMod.addCard(new pokemodCore.cards.tm.TackleTM());
+        BaseMod.addCard(new pokemodCore.cards.tm.TailWhipTM());
     }
 
     @Override

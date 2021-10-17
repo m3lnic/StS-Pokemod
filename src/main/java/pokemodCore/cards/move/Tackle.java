@@ -35,11 +35,11 @@ public class Tackle extends PokeMove {
                 CardType.ATTACK,
                 AbstractCardEnum.POKEMOD_COLOR,
                 CardRarity.BASIC,
-                CardTarget.ENEMY
+                CardTarget.ENEMY,
+                PokemodCardTags.TYPE_NORMAL
         );
         this.damage = this.baseDamage = ATTACK_DMG;
         this.timesUpgraded = upgrades;
-        this.tags.add(PokemodCardTags.TYPE_NORMAL);
     }
 
     @Override

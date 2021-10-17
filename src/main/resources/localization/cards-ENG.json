@@ -7,6 +7,10 @@
     "NAME": "Tail Whip",
     "DESCRIPTION": "Apply !M! Vulnerable"
   },
+  "pokemod:tail_whip:tm": {
+    "NAME": "TM: Tail Whip",
+    "DESCRIPTION": "Teach a pokemon NL Tail Whip"
+  },
   "pokemod:bulbasaur": {
     "NAME": "Bulbasaur",
     "DESCRIPTION": "Go Bulbasaur!"
@@ -43,6 +47,10 @@
     "NAME": "Growl",
     "DESCRIPTION": "Apply !M! Weak"
   },
+  "pokemod:growl:tm": {
+    "NAME": "TM: Growl",
+    "DESCRIPTION": "Teach a pokemon NL Growl"
+  },
   "pokemod:ivysaur": {
     "NAME": "Ivysaur",
     "DESCRIPTION": "Go Ivysaur!"
@@ -51,13 +59,25 @@
     "NAME": "Leech Seed",
     "DESCRIPTION": "Siphon !M! temp HP"
   },
+  "pokemod:leech_seed:tm": {
+    "NAME": "TM: Leech Seed",
+    "DESCRIPTION": "Teach a pokemon NL Leech SeedP"
+  },
   "pokemod:leer": {
     "NAME": "Leer",
     "DESCRIPTION": "Apply !M! Vulnerable"
   },
+  "pokemod:leer:tm": {
+    "NAME": "TM: Leer",
+    "DESCRIPTION": "Teach a pokemon NL Leer"
+  },
   "pokemod:peck": {
     "NAME": "Peck",
     "DESCRIPTION": "Deal !D!x!M! Damage"
+  },
+  "pokemod:peck:tm": {
+    "NAME": "TM: Peck",
+    "DESCRIPTION": "Teach a pokemon NL Peck"
   },
   "pokemod:psychic_energy": {
     "NAME": "Psychic Energy",
@@ -71,6 +91,10 @@
     "NAME": "Scratch",
     "DESCRIPTION": "Deals !D! Damage"
   },
+  "pokemod:scratch:tm": {
+    "NAME": "Scratch",
+    "DESCRIPTION": "Teach a pokemon NL scratch"
+  },
   "pokemod:squirtle": {
     "NAME": "Squirtle",
     "DESCRIPTION": "Go Squirtle!"
@@ -82,6 +106,10 @@
   "pokemod:tackle": {
     "NAME": "Tackle",
     "DESCRIPTION": "Deals !D! Damage"
+  },
+  "pokemod:tackle:tm": {
+    "NAME": "TM: Tackle",
+    "DESCRIPTION": "Teach a pokemon NL Tackle"
   },
   "pokemod:water_energy": {
     "NAME": "Water Energy",

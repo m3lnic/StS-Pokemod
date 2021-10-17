@@ -21,6 +21,10 @@ import pokemodCore.cards.pokemon.Bulbasaur;
 import pokemodCore.cards.pokemon.Charmander;
 import pokemodCore.cards.pokemon.Squirtle;
 import pokemodCore.cards.skill.RareCandy;
+import pokemodCore.cards.tm.GrowlTM;
+import pokemodCore.cards.tm.LeechSeedTM;
+import pokemodCore.cards.tm.LeerTM;
+import pokemodCore.cards.tm.PeckTM;
 import pokemodCore.patches.AbstractCardEnum;
 import pokemodCore.patches.PokemodEnum;
 import pokemodCore.relics.Starterball;
@@ -68,12 +72,9 @@ public class TrainerOne extends CustomPlayer {
         retVal.add(RareCandy.ID);
         retVal.add(RareCandy.ID);
         retVal.add(RareCandy.ID);
-        retVal.add(RareCandy.ID);
-        retVal.add(RareCandy.ID);
-        retVal.add(RareCandy.ID);
-        retVal.add(RareCandy.ID);
-        retVal.add(RareCandy.ID);
-        retVal.add(RareCandy.ID);
+        retVal.add(GrowlTM.ID);
+        retVal.add(PeckTM.ID);
+        retVal.add(LeechSeedTM.ID);
         return retVal;
     }
 

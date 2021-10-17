@@ -35,10 +35,11 @@ public class Squirtle extends PokeCard {
                 DESCRIPTION,
                 CardType.SKILL,
                 AbstractCardEnum.POKEMOD_COLOR,
-                CardRarity.SPECIAL
+                CardRarity.SPECIAL,
+                PokemodCardTags.TYPE_WATER,
+                null
         );
         this.moves = new ArrayList<PokeMove>(moves);
-        this.tags.add(PokemodCardTags.TYPE_WATER);
         this.generateDescriptionAndModal();
     }
 
